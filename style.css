@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    /* border: 2px solid green; */
+    height: 76px;
+    width: 76px;
+    margin: 13px 13px;
+}
+#navbar #logo img{
+    height: 100%;
+    width: 100%;
+}
+#navbar{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#navbar::before{
+    content: '';
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+#navbar ul{
+    /* border: 2px solid black; */
+    display: flex;
+}
+#navbar ul li{
+    color: black;
+    list-style: none;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 7px 52px;
+    border-radius: 22px;
+    color: darkblue;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: wheat;
+    cursor: pointer;
+}
+#home{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 3px;
+    position: relative;
+}
+#home::before{
+    content: '';
+    position: absolute;
+    background-image: url('newimg4.jpg') ;
+    height: 100%;
+    width: 100%;
+    opacity: 0.89;
+    z-index: -1;
+}
+#home h1{
+    /* border: 2px solid black; */
+    font-size: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    transition-property: color;
+    transition-duration: 2s;
+    /* color: rgb(255, 183, 1); */
+    color: black
+}
+#home h1:hover{
+    /* color: rgba(179, 240, 67, 0.747); */
+    color: crimson;
+}
+#home p{
+    font-size: 1.4rem;
+    padding: 34px 3px;
+    font-weight: bold;
+    /* color: rgb(253, 183, 4); */
+    color: black;
+    transition-property: color;
+    transition-duration: 2s;
+    text-align: center;
+    /* border: 2px solid green; */
+}
+#home p:hover{
+    /* color:  rgba(179, 240, 67, 0.747); */
+    color: crimson;
+}
+#home button{
+    font-size: 2rem;
+    padding: 6px 13px;
+    margin: 9px;
+    margin-bottom: 23px;
+    border-radius: 32px;
+    transition-property: background-color;
+    transition-duration: 2s;
+}
+#home button:hover{
+    color: blue;
+    background-color: cyan;
+    cursor: pointer;
+}
+#hr1{
+    color: black;
+    padding: 5px;
+    background-color: black;
+}
+.services-container{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(167 208 204);
+}
+.services-heading{
+    /* border: 2px solid black; */
+    padding: 6px 10px;
+    font-size: 4rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: crimson;
+}
+.mainbox{
+    /* border: 2px solid blue; */
+    display: flex;
+}
+.box{
+    display: flex;
+    border: 6px solid green;
+    flex-direction: column;
+    align-items: center;
+    margin: 7px 2px;
+    border-radius: 29px;
+    background-color: rgb(169, 105, 214);
+    transition-property: background-color;
+    transition-duration: 2s;
+}
+.box:hover{
+    background-color: rgb(92, 222, 226);
+}
+.box p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.box img{
+    width: 106px;
+    height: 106px;
+}
+.box h2{
+    font-size: 2rem;
+    font-family: cursive;
+}
+/* client section */
+#client-section{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+#client-section h1{
+    /* border: 2px solid grey; */
+    text-align: center;
+    font-size: 5rem;
+    padding: 8px 492px;
+    color: crimson;
+    background-color: rgb(204, 134, 148);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#client-section h1:hover{
+    color: rgb(250, 5, 54);
+    background-color: rgb(240, 134, 155);
+}
+#clients{
+    /* border: 2px solid green; */
+    display: flex; 
+    /* justify-content: space-around; */
+    justify-content: center;
+    align-items: center;
+
+    background-color: royalblue;
+    order: 1;
+}
+.client-item{
+    /* border: 2px solid red; */
+    order: 2;
+    margin: 4px 1px;
+    /* padding: 56px 79px; */
+    padding: 54px 37px;
+    border-radius: 60px;
+    background-size: 100%;
+    background-color: salmon;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+.client-item:hover{
+    /* border: 4px solid red; */
+    background-color: rgba(179, 240, 67, 0.747);
+}
+.client-item img{
+    width: 210px;
+    height: 131px;
+    border-radius: 70px;
+}
+#contact{
+    /* border: 2px solid red; */
+    position: relative;
+}
+#contactbox input , #contactbox textarea{
+    width: 100%;
+    border-radius: 5px;
+    background-color: #cef3ff;
+    border: 2px solid black;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+}
+#contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    /* border: 1px solid red; */
+}
+#contact form{
+    width: 40%;
+    /* border: 1px solid green; */
+}
+#contactbox label{
+    font-size: 1.4rem;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url('contact.png') no-repeat center center/cover;
+}
+#contact h1{
+    text-align: center;
+    font-size: 6rem;
+    color: blue;
+    /* border: 1px solid green; */
+}
+#hr2{
+    padding: 3px;
+    margin: 0px 509px;
+    background-color: black;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 6px;
+    text-align: center;
+}
+form button{
+    color: white;
+    background-color: black;
+    margin: 4px 230px;
+    padding: 0px 21px;
+    font-size: 2rem;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    /* transition-property: color; */
+    /* transition-duration: 1.5s; */
+}
+form button:hover{
+    cursor: pointer;
+    color: blue;
+    background-color: lightblue;
+}
